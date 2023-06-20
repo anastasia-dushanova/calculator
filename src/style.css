@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+
+.App {
+    background: #ebfaff;
+    border-radius: 50px;
+    color: white;
+    height: 640px;
+    padding: 20px;
+    position: relative;
+    width: 350px;
+  }
+  
+
+
+.display {
+    font-size: 100px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: right;
+    color: #333;
+}
+
+.buttons {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.Button {
+    align-items: center;
+    background: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    height: 60px;
+    justify-content: center;
+    width: 60px;
+    transition: filter 0.3s ease-in;
+}
+
+.Button:active, .Button:focus {
+    filter: brightness(120%);
+}
+
+.Button.zero {
+    width: 150px;
+    grid-column: 1 / span 2;
+    border-radius: 57.5px;
+    position: relative;
+    justify-content: flex-start;
+    padding-left: 43px;
+}
+
+.Button.function {
+    color: black;
+    background: #a5a5a5;
+}
+
+.Button.operator {
+    background: #f1a33c;
+}
